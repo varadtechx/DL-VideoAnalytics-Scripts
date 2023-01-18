@@ -35,11 +35,11 @@ for filename in os.listdir(folder_path):
                     cv2.imwrite("images_aug/{}_{}.jpg".format(label,line), obj)
 
 
-def yolo_to_pascal_voc(x, y, width, height ,  image_w, image_h):
+'''def yolo_to_pascal_voc(x, y, width, height ,  image_w, image_h):
     w = w * image_w
     h = h * image_h
     x1 = ((2 * x_center * image_w) - w)/2
     y1 = ((2 * y_center * image_h) - h)/2
     x2 = x1 + w
     y2 = y1 + h
-    return [x1, y1, x2, y2]
+    return [x1, y1, x2, y2]'''
